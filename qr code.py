@@ -1,15 +1,13 @@
-import qrcode
-from tkinter import *
 
+from tkinter import *
+import qrcode
 cp = Tk()
 cp.title("QR Code Generator")
 cp.geometry("700x350")
 cp.config(bg='#ADD8E6')
-
 # Frame to hold widgets
 frame = Frame(cp, bg='#ADD8E6')
 frame.pack(expand=True)
-
 # Labels and Entries
 Label(frame, text='Enter Text or URL:', font=('Arial Black', 14), bg='#ADD8E6').grid(row=0, column=0, sticky='w', padx=10, pady=10)
 msg = Entry(frame, width=40)
